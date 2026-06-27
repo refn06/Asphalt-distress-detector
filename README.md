@@ -21,16 +21,6 @@ Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permuk
 
 ---
 
-## 📊 Performa Model
-
-| Metrik | Nilai |
-|--------|-------|
-| mAP@50 | 0.708 |
-| Precision | 0.791 |
-| Recall | 0.746 |
-| F1-Score | 0.767 |
-
----
 
 ## 🗂️ Dataset
 
@@ -38,6 +28,7 @@ Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permuk
 - **Sumber**: [Mendeley Data](https://data.mendeley.com/datasets/cbm6dkvggn/1)
 - **Total citra**: 6.200 (train: 4.959 / val: 620 / test: 620)
 - **DOI**: 10.17632/cbm6dkvggn/1
+- **Data Testing**: Diambil secara manual menggunakan kamera handphone
 
 ---
 
