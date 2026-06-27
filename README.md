@@ -24,7 +24,7 @@ Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permuk
 
 ## 🗂️ Dataset
 
-- **Nama**: PaveDistress — Asphalt Pavement Dataset
+- **Nama**: PaveDistress - Asphalt Pavement Dataset
 - **Sumber**: [Mendeley Data](https://data.mendeley.com/datasets/cbm6dkvggn/1)
 - **Total citra**: 6.200 (train: 4.959 / val: 620 / test: 620)
 - **DOI**: 10.17632/cbm6dkvggn/1
