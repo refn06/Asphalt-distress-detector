@@ -1,6 +1,6 @@
 # 🛣️ Asphalt Crack Detection | Deteksi Kerusakan Jalan Aspal
 
-Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **YOLOv9c** berbasis deep learning.
+Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **You Only Look Once versi 9 (YOLOv9)** berbasis deep learning.
 
 ---
 
