@@ -1,4 +1,4 @@
-# 🛣️ PaveDetect — Deteksi Kerusakan Jalan Aspal
+# 🛣️ Asphalt Crack Detection | Deteksi Kerusakan Jalan Aspal
 
 Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **YOLOv9c** berbasis deep learning.
 
