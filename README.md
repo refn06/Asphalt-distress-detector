@@ -2,8 +2,6 @@
 
 Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **YOLOv9c** berbasis deep learning.
 
-Dibangun sebagai bagian dari **Penulisan Ilmiah**, Program Studi Sistem Informasi, Universitas Gunadarma, 2026.
-
 ---
 
 ## 🔗 Demo Aplikasi
