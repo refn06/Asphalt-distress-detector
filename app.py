@@ -7,8 +7,8 @@ import os
 
 # ── Page config ──
 st.set_page_config(
-    page_title="PaveDetect — Deteksi Kerusakan Jalan",
-    page_icon="🛣️",
+    page_title="Asphalt Crack Detection",
+    page_icon="🚧",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -196,7 +196,7 @@ model = load_model()
 
 # ── Sidebar ──
 with st.sidebar:
-    st.markdown("### 🛣️ PaveDetect")
+    st.markdown("### 🚧 Asphalt Crack Detection")
     st.markdown("---")
 
     st.markdown('<div class="section-label">Parameter Deteksi</div>', unsafe_allow_html=True)
@@ -210,13 +210,10 @@ with st.sidebar:
     st.markdown("""
     <div class="model-info">
         <div class="row"><span class="key">Model</span><span class="val">YOLOv9c</span></div>
-        <div class="row"><span class="key">Training</span><span class="val">100 epoch</span></div>
         <div class="row"><span class="key">mAP@50</span><span class="val">0.634</span></div>
         <div class="row"><span class="key">Precision</span><span class="val">0.799</span></div>
         <div class="row"><span class="key">Recall</span><span class="val">0.666</span></div>
         <div class="row"><span class="key">F1-Score</span><span class="val">0.726</span></div>
-        <div class="row"><span class="key">Dataset</span><span class="val">PaveDistress</span></div>
-        <div class="row"><span class="key">Kelas</span><span class="val">4 kelas</span></div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -239,7 +236,7 @@ with st.sidebar:
 # ── Main area ──
 st.markdown("""
 <div class="header-bar">
-    <h1>🛣️ PaveDetect</h1>
+    <h1>🚧 Asphalt Crack Detection</h1>
     <p>Sistem deteksi kerusakan jalan aspal berbasis YOLOv9c · Upload foto jalan untuk mengidentifikasi jenis kerusakan secara otomatis</p>
 </div>
 """, unsafe_allow_html=True)
