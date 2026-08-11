@@ -211,9 +211,10 @@ with st.sidebar:
     <div class="model-info">
         <div class="row"><span class="key">Model</span><span class="val">YOLOv9c</span></div>
         <div class="row"><span class="key">Training</span><span class="val">100 epoch</span></div>
-        <div class="row"><span class="key">mAP@50</span><span class="val">0.708</span></div>
-        <div class="row"><span class="key">Precision</span><span class="val">0.791</span></div>
-        <div class="row"><span class="key">Recall</span><span class="val">0.746</span></div>
+        <div class="row"><span class="key">mAP@50</span><span class="val">0.634</span></div>
+        <div class="row"><span class="key">Precision</span><span class="val">0.799</span></div>
+        <div class="row"><span class="key">Recall</span><span class="val">0.666</span></div>
+        <div class="row"><span class="key">F1-Score</span><span class="val">0.726</span></div>
         <div class="row"><span class="key">Dataset</span><span class="val">PaveDistress</span></div>
         <div class="row"><span class="key">Kelas</span><span class="val">4 kelas</span></div>
     </div>
