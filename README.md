@@ -1,8 +1,6 @@
-# 🛣️ PaveDetect — Deteksi Kerusakan Jalan Aspal
+# 🛣️ Asphalt Crack Detection | Deteksi Kerusakan Jalan Aspal
 
-Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **YOLOv9c** berbasis deep learning.
-
-Dibangun sebagai bagian dari **Penulisan Ilmiah**, Program Studi Sistem Informasi, Universitas Gunadarma, 2026.
+Aplikasi web interaktif untuk mendeteksi dan mengklasifikasikan kerusakan permukaan jalan aspal secara otomatis menggunakan model **You Only Look Once versi 9 (YOLOv9)** berbasis deep learning.
 
 ---
 
@@ -23,23 +21,14 @@ Dibangun sebagai bagian dari **Penulisan Ilmiah**, Program Studi Sistem Informas
 
 ---
 
-## 📊 Performa Model
-
-| Metrik | Nilai |
-|--------|-------|
-| mAP@50 | 0.708 |
-| Precision | 0.791 |
-| Recall | 0.746 |
-| F1-Score | 0.767 |
-
----
 
 ## 🗂️ Dataset
 
-- **Nama**: PaveDistress — Asphalt Pavement Dataset
+- **Nama**: PaveDistress - Asphalt Pavement Dataset
 - **Sumber**: [Mendeley Data](https://data.mendeley.com/datasets/cbm6dkvggn/1)
 - **Total citra**: 6.200 (train: 4.959 / val: 620 / test: 620)
 - **DOI**: 10.17632/cbm6dkvggn/1
+- **Data Testing**: Diambil secara manual menggunakan kamera handphone
 
 ---
 
