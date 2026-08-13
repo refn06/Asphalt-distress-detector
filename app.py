@@ -33,6 +33,21 @@ html, body, [class*="css"] {
     border-right: 1px solid #E5E7EB;
 }
 
+/* Compact sidebar spacing */
+[data-testid="stSidebar"] .block-container {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+}
+[data-testid="stSidebar"] hr {
+    margin: 0.5rem 0;
+}
+[data-testid="stSidebar"] [data-testid="stSlider"] {
+    margin-bottom: 0.2rem;
+}
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    margin-bottom: 0.3rem;
+}
+
 /* Header bar */
 .header-bar {
     background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
@@ -162,8 +177,8 @@ html, body, [class*="css"] {
     background: #F9FAFB;
     border: 1px solid #E5E7EB;
     border-radius: 10px;
-    padding: 1rem;
-    font-size: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.75rem;
 }
 .model-info .row {
     display: flex;
@@ -175,6 +190,20 @@ html, body, [class*="css"] {
 .model-info .row:last-child { border-bottom: none; }
 .model-info .key { color: #6B7280; }
 .model-info .val { font-weight: 600; color: #111827; }
+
+/* Compact class badge list */
+.class-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 0.5rem;
+}
+.class-grid .badge {
+    margin-right: 0.25rem;
+}
+.class-grid span.label-text {
+    font-size: 0.72rem;
+    color: #374151;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -205,7 +234,6 @@ with st.sidebar:
     iou_threshold  = st.slider("IoU threshold (NMS)", 0.1, 0.9, 0.5, 0.05,
         help="Mengontrol seberapa banyak bounding box yang tumpang tindih diperbolehkan.")
 
-    st.markdown("---")
     st.markdown('<div class="section-label">Informasi Model</div>', unsafe_allow_html=True)
     st.markdown("""
     <div class="model-info">
@@ -217,14 +245,15 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown("---")
-    st.markdown('<div class="section-label">Kelas Kerusakan</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label" style="margin-top:0.6rem">Kelas Kerusakan</div>', unsafe_allow_html=True)
+    class_html = '<div class="class-grid">'
     for code, info in CLASS_INFO.items():
-        st.markdown(
-            f'<span class="badge {info["badge"]}">{code}</span> '
-            f'<span style="font-size:0.82rem;color:#374151"> {info["name_id"]}</span><br>',
-            unsafe_allow_html=True
+        class_html += (
+            f'<div><span class="badge {info["badge"]}">{code}</span>'
+            f'<span class="label-text"> {info["name_id"]}</span></div>'
         )
+    class_html += '</div>'
+    st.markdown(class_html, unsafe_allow_html=True)
 
     st.markdown("---")
     st.markdown(
