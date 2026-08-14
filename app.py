@@ -274,8 +274,7 @@ st.markdown("""
 tab1, tab2 = st.tabs(["📷 Upload Foto", "🖼️ Contoh Deteksi"])
 
 def run_detection(image_input, source_label=""):
-    img_array = np.array(image_input.convert("RGB"))
-    results   = model.predict(img_array, conf=conf_threshold,
+    results   = model.predict(image_input.convert("RGB"), conf=conf_threshold,
                               iou=iou_threshold, verbose=False)
     result    = results[0]
     plotted   = result.plot()
